@@ -1,0 +1,15 @@
+.app {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // display: grid;
+  // align-items: center;
+  margin-inline: auto;
+  height: 100%;
+  width: 80%;
+  overflow: hidden;
+  .button-file-path {
+    margin-inline: auto;
+    margin-top: 10px;
+  }
+}

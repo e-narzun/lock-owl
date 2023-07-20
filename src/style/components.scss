@@ -1,0 +1,94 @@
+.button-file-path {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  height: 30px;
+  padding-inline: 20px;
+  background-color: var(--highlight);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.test-input {
+  .test-input-title {
+    font-size: 14px;
+    color: #c5c5c5;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+  .test-input-field {
+    margin-top: 5px;
+    background-color: #191a1f;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding-inline: 20px;
+    transition: box-shadow 0.2s ease-in-out;
+    transition: outline 0.2s ease-in-out;
+    outline: transparent;
+
+    &:focus,
+    &:active {
+      outline: var(--highlight) solid 1px;
+      box-shadow: 0px 0px 13px 0px #1836ccab;
+    }
+    &::-ms-reveal {
+      filter: invert(100%);
+    }
+  }
+}
+
+.create-user-button {
+  width: 180px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--highlight);
+  border: none;
+  transition: box-shadow 0.2s ease-in-out;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 0px 13px 0px #1836ccab;
+  }
+}
+.password-input-background {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  width: 100lvw;
+  height: 100lvh;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(2.5px);
+  .password-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #password-input-filed {
+      background: #2d2f38;
+    }
+    button {
+      border: none;
+      height: 30px;
+      cursor: pointer;
+      // width: 100px;
+    }
+    .submit {
+      background: var(--highlight);
+      padding-inline: 30px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+    .cancel {
+      background: transparent;
+    }
+  }
+}

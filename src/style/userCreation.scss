@@ -1,0 +1,14 @@
+.user-creation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 140px);
+  padding-top: 60px;
+  padding-bottom: 80px;
+  .input-files {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
