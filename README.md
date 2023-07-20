@@ -2,18 +2,15 @@
 
 ## Overview
 
-Lock Owl is a free and open-source file encryption and decryption tool developed using the Rust programming language and the Tauri framework. It aims to provide a secure and user-friendly solution for protecting sensitive files.
-
-Please note that Lock Owl is a personal project for whose development I am solely responsible. Therefore, I cannot make any guarantees about the functionality or security of the app.
+Lock Owl is a free and open-source file encryption and decryption program. It helps you to easily secure any type of file for unauthorized usage. It is built with the framework Tauri which combines rust as a backend solution and a web view. Lock Owl is a personal project and only for personal use.
 
 #### ⚠️ Disclaimer
 
-> Therefore, it is important to understand that you use the app at your own risk.
-> I also advise against using the app in commercial environments.
+> Use of this GitHub project is at your own risk. I don't offer any form of support for the program, nor can I guarantee its functionality.
 
-## Installation
+## Instructions
 
-⚠️ _Instructions following soon_ ⚠️
+This program uses asymmetric encryption. To decrypt the files, you need both the private key and your password. Without these important components, decrypting the files is impossible. It is important that you use a strong and secure password for your key to ensure the highest level of security.
 
 ## Recommended IDE Setup
 
