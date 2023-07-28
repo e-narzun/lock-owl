@@ -262,6 +262,9 @@ pub fn decrypt_file(
     new_file.sync_all()?;
     remove_file(&path)?;
 
+    let old_filetime = filetime::FileTime::from_unix_time(old_header.origin_creation_date, 0);
+    filetime::set_file_mtime(&new_file_path, old_filetime)?;
+
     let answer: FileDisplay = FileDisplay {
         filename: new_file_path
             .file_name()

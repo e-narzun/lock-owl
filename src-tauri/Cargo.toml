@@ -1,6 +1,6 @@
 [package]
 name = "lock-owl"
-version = "0.0.0"
+version = "0.0.1"
 description = "A simple encryption program"
 authors = ["Eric Menne"]
 license = ""
@@ -22,6 +22,7 @@ rand = "0.8.4"
 aes-gcm-siv = "0.11.1"
 rust-argon2 = "1.0"
 anyhow = "1.0.72"
+filetime = "0.2.21"
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem
