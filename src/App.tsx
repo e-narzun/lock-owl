@@ -18,7 +18,11 @@ export default function App() {
 
   return (
     <div className="app">
-      <History historyList={historyList} />
+      <History
+        historyList={historyList}
+        historySetter={setHistoryList}
+        setSelectedPath={setSelectedPath}
+      />
       <FileSelector
         historyList={historyList}
         historySetter={setHistoryList}
