@@ -3,6 +3,8 @@ import HistoryElement from "./HistoryElement";
 
 type historyProps = {
   historyList: HistoryElementInfo[];
+  historySetter: React.Dispatch<React.SetStateAction<HistoryElementInfo[]>>;
+  setSelectedPath: React.Dispatch<React.SetStateAction<string>>;
 };
 
 export default function History(props: historyProps) {
@@ -17,6 +19,9 @@ export default function History(props: historyProps) {
             lockStatus={element.status}
             filename={element.filename}
             location={element.path}
+            historyList={props.historyList}
+            historySetter={props.historySetter}
+            setSelectedPath={props.setSelectedPath}
           ></HistoryElement>
         ))}
       </div>
